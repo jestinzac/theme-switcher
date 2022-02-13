@@ -2,7 +2,7 @@
   "name": "theme-switcher",
   "version": "0.1.0",
   "private": true,
-  "homepage": " https://jestinzac.github.io/theme-switcher/",
+  "homepage": "https://jestinzac.github.io/theme-switcher/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
