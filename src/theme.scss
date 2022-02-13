@@ -1,0 +1,53 @@
+@use "color.variable" as v; //by default sass treats relative path, so no need of `src/...` nor `./...`! Notice, no need of _ and extension
+
+:root {
+  --size: 1rem;
+  --color-primary: #{v.$color-blue};
+  --background: #{v.$color-white};
+  --color: #{v.$color-black};
+}
+
+[data-theme-size="xs"] {
+  --size: 0.8rem;
+}
+[data-theme-size="sm"] {
+  --size: 0.9rem;
+}
+[data-theme-size="md"] {
+  --size: 1rem;
+}
+[data-theme-size="lg"] {
+  --size: 1.1rem;
+}
+[data-theme-size="xl"] {
+  --size: 1.2rem;
+}
+
+[data-theme-color="yellow"] {
+  --color-primary: #{v.$color-yellow};
+}
+[data-theme-color="red"] {
+  --color-primary: #{v.$color-red};
+}
+[data-theme-color="purple"] {
+  --color-primary: #{v.$color-purple};
+}
+[data-theme-color="orange"] {
+  --color-primary: #{v.$color-orange};
+}
+[data-theme-color="green"] {
+  --color-primary: #{v.$color-green};
+}
+
+[data-theme-background="light"] {
+  --background: #{v.$color-white};
+  --color: #{v.$color-black};
+}
+[data-theme-background="dim"] {
+  --background: #{v.$color-grey-60};
+  --color: #{v.$color-white};
+}
+[data-theme-background="dark"] {
+  --background: #{v.$color-black};
+  --color: #{v.$color-grey-10};
+}
